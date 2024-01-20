@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,71 @@
     <!-- -----------TailwindCss CDN link------------ -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
-    
+
+    <header>
+        <section class="nav-bar">
+            <div class="container flex justify-between items-center mx-auto px-4">
+                <div class="nav-logo py-4">
+                    <img class="h-12 h-10" src="./icons/logo.png" alt="">
+                </div>
+                <nav>
+                    <div class="nav-logo">
+                        <ul class="flex space-x-4">
+                            <li><a href=""> Home </a></li>
+                            <li><a href=""> Products </a></li>
+                            <li><a href=""> About Us </a></li>
+                            <li><a href=""> Contact Us </a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="banner-section">
+            <div class="container flex flex-col md:flex-row items-center mx-auto px-4">
+                <div class="banner-content">
+                    <h1 class="text-[#FABE4C] text-6xl "> Be the Penguins <br>
+                        <span class="text-[#363958]"> of Winter </span>
+                    </h1>
+                    <p class="text-base text-[#3E3E3E] my-3"> Lorem Ipsum is simply dummy text of the printing <br> and typesetting industry. </p>
+                    <button class="flex justify-center items-center px-4 py-2 bg-lime-800 rounded-md text-white"> <img class="w-6 mr-2" src="./icons/shopping-cart 1.png" alt=""> BUY NOW </button>
+                </div>
+                <div class="banner-image md:ml-16">
+                    <img src="./images/model.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="product-section">
+            <div class="container mx-auto px-4">
+                <h1 class="text-[#363958] text-4xl uppercase"> W0Man Jacket </span>
+                </h1>
+                <div class="product-container flex">
+
+                    <div class="product-card-item bg-slate-400 rounded-md p-4">
+                        <img class="w-full" src="./images/jacket-1.png" alt="">
+                        <div class="card-content">
+                            <h3> Yellow Coat Jacket  </h3>
+                            <p> Lorem Ipsum is simply dummy text of the 
+                                printing and typesetting industry. </p>
+                            <div class="card-pricenBtn flex justify-between">
+                                <h2 class=""> $234 </h2>
+                                <button class="flex justify-center items-center px-4 py-2 bg-lime-800 rounded-md text-white"> <img class="w-6 mr-2" src="./icons/shopping-cart 1.png" alt=""> BUY NOW </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer> </footer>
 </body>
+
 </html>
