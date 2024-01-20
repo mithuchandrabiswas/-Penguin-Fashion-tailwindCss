@@ -8,9 +8,20 @@
 
     <!-- -----------TailwindCss CDN link------------ -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- -----------Google Font link - Inter-------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    
+    <style>
+        .font-inter {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
 </head>
 
-<body>
+<body class="font-inter">
 
     <header>
         <section class="nav-bar">
@@ -33,14 +44,16 @@
     </header>
 
     <main>
-        <section class="banner-section">
+        <section class="banner-section my-20">
             <div class="container flex flex-col md:flex-row items-center mx-auto px-4">
                 <div class="banner-content">
                     <h1 class="text-[#FABE4C] text-6xl "> Be the Penguins <br>
                         <span class="text-[#363958]"> of Winter </span>
                     </h1>
-                    <p class="text-base text-[#3E3E3E] my-3"> Lorem Ipsum is simply dummy text of the printing <br> and typesetting industry. </p>
-                    <button class="flex justify-center items-center px-4 py-2 bg-lime-800 rounded-md text-white"> <img class="w-6 mr-2" src="./icons/shopping-cart 1.png" alt=""> BUY NOW </button>
+                    <p class="text-base text-[#3E3E3E] my-3"> Lorem Ipsum is simply dummy text of the printing <br> and
+                        typesetting industry. </p>
+                    <button class="flex justify-center items-center px-4 py-2 bg-lime-800 rounded-md text-white"> <img
+                            class="w-6 mr-2" src="./icons/shopping-cart 1.png" alt=""> BUY NOW </button>
                 </div>
                 <div class="banner-image md:ml-16">
                     <img src="./images/model.png" alt="">
@@ -48,27 +61,98 @@
             </div>
         </section>
 
-        <section class="product-section">
+        <section class="product-section my-20">
             <div class="container mx-auto px-4">
                 <h1 class="text-[#363958] text-4xl uppercase"> W0Man Jacket </span>
                 </h1>
-                <div class="product-container flex">
+                <div class="product-container flex gap-4">
 
-                    <div class="product-card-item bg-slate-400 rounded-md p-4">
-                        <img class="w-full" src="./images/jacket-1.png" alt="">
+                    <div class="product-card-item rounded-md p-4 shadow-2xl">
+                        <img class="w-52 p-4" src="./images/jacket-1.png" alt="">
                         <div class="card-content">
-                            <h3> Yellow Coat Jacket  </h3>
-                            <p> Lorem Ipsum is simply dummy text of the 
+                            <h3 class="text-2xl font-bold"> Yellow Coat Jacket </h3>
+                            <p class="text-base text-[#3E3E3E] my-3"> Lorem Ipsum is simply dummy text of the
                                 printing and typesetting industry. </p>
                             <div class="card-pricenBtn flex justify-between">
-                                <h2 class=""> $234 </h2>
-                                <button class="flex justify-center items-center px-4 py-2 bg-lime-800 rounded-md text-white"> <img class="w-6 mr-2" src="./icons/shopping-cart 1.png" alt=""> BUY NOW </button>
+                                <h2 class="text-4xl text-[#FABE4C] font-extrabold"> $234 </h2>
+                                <button
+                                    class="flex justify-center items-center px-4 py-2 bg-lime-800 rounded-md text-white text-base">
+                                    <img class="w-6 mr-2" src="./icons/shopping-cart 1.png" alt=""> BUY NOW </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card-item rounded-md p-4 shadow-2xl">
+                        <img class="w-52 p-4" src="./images/jacket-1.png" alt="">
+                        <div class="card-content">
+                            <h3 class="text-2xl font-bold"> Yellow Coat Jacket </h3>
+                            <p class="text-base text-[#3E3E3E] my-3"> Lorem Ipsum is simply dummy text of the
+                                printing and typesetting industry. </p>
+                            <div class="card-pricenBtn flex justify-between">
+                                <h2 class="text-4xl text-[#FABE4C] font-extrabold"> $234 </h2>
+                                <button
+                                    class="flex justify-center items-center px-4 py-2 bg-lime-800 rounded-md text-white text-base">
+                                    <img class="w-6 mr-2" src="./icons/shopping-cart 1.png" alt=""> BUY NOW </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card-item rounded-md p-4 shadow-2xl">
+                        <img class="w-52" src="./images/jacket-1.png" alt="">
+                        <div class="card-content">
+                            <h3 class="text-2xl font-bold"> Yellow Coat Jacket </h3>
+                            <p class="text-base text-[#3E3E3E] my-3"> Lorem Ipsum is simply dummy text of the
+                                printing and typesetting industry. </p>
+                            <div class="card-pricenBtn flex justify-between">
+                                <h2 class="text-4xl text-[#FABE4C] font-extrabold"> $234 </h2>
+                                <button
+                                    class="flex justify-center items-center px-4 py-2 bg-lime-800 rounded-md text-white text-base">
+                                    <img class="w-6 mr-2" src="./icons/shopping-cart 1.png" alt=""> BUY NOW </button>
                             </div>
                         </div>
                     </div>
 
 
+                    
+                    
+
+
                 </div>
+            </div>
+        </section>
+
+        <section class="hero-section my-20">
+            <div class="container flex flex-col flex-col-reverse md:flex-row items-center mx-auto px-4 gap-3">
+
+                <div class="hero-card w-1/2">
+                    <div class="card-item flex items-center gap-3 mb-5">
+                        <img class="md:w-16" src="./icons/house.png" alt="">
+                        <div>
+                            <h3 class="text-2xl text-[#363958] font-bold mb-3"> Find the Perfect Fit </h3>
+                            <p class="text-base text-[#3E3E3E] leading-6 w-72"> Everybody is different, which is why we
+                                offer styles for every body. </p>
+                        </div>
+                    </div>
+                    <div class="card-item flex items-center gap-3 mb-5">
+                        <img class="w-16" src="./icons/house.png" alt="">
+                        <div>
+                            <h3 class="text-2xl text-[#363958] font-bold mb-3"> Find the Perfect Fit </h3>
+                            <p class="text-base text-[#3E3E3E] leading-6 w-72"> Everybody is different, which is why we
+                                offer styles for every body. </p>
+                        </div>
+                    </div>
+                    <div class="card-item flex items-center gap-3">
+                        <img class="w-16" src="./icons/house.png" alt="">
+                        <div>
+                            <h3 class="text-2xl text-[#363958] font-bold mb-3"> Find the Perfect Fit </h3>
+                            <p class="text-base text-[#3E3E3E] leading-6 w-72"> Everybody is different, which is why we
+                                offer styles for every body. </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-image w-1/2">
+                    <img class="w-full" src="./images/shopping.png" alt="">
+                </div>
+
             </div>
         </section>
     </main>
